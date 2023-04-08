@@ -1,0 +1,122 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+body{
+    background-image: url(images/newest.jpg);
+    background-repeat: no-repeat;
+     background-size: cover; 
+   
+}
+h1{
+  /* margin: 30px; */
+  margin-right: 70px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 6rem;
+  color: #4ECCA3;
+  text-align: center;
+
+}
+h3{
+  margin-top: 0%;
+  font-size: 3rem;
+  color: aliceblue;
+  margin-left: 50px;
+}
+sub{
+  font-size: xx-large;
+  color: azure;
+}
+.btn{
+  margin-bottom: 1%;
+  margin-left:50px ;
+  padding: 10px;
+  margin-top: 7px;
+}
+.column {
+    float: left;
+    width: 30%;
+    text-align: center;
+    justify-content: space-around;
+    width: [width of img];
+
+  }
+  .column img {
+    display: block;
+    margin: 0 auto;
+}
+  /* .row{
+
+  background-image: url("images/bg3.png");
+  height: 500px;
+  
+  
+  } */
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+  #im1{
+    visibility: hidden;
+    /* margin-left: 150px; */
+  }
+  #im2{
+    visibility: hidden;
+  }
+  #im3{
+    visibility: hidden;
+  }
+  #playbtn{
+    visibility: hidden;
+     margin-left: 20%; 
+    
+   
+  }
+  #resetbtn{
+    visibility: hidden; 
+  margin-left: 5%;
+  
+  }
+  .para{
+    /* padding-left: 10px; */
+    /* margin-left: 40px; */
+    color: aliceblue;
+    font-size: xx-large;
+  }
+  #playbtn1{
+    visibility: hidden;
+  }
+  #playbtn2{
+    visibility: hidden;
+  }
+  footer {
+    margin-top: 5%;
+    color:black;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  @media (max-width: 700px) {
+    h1{
+      margin: 20px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 2rem;
+  color: #4ECCA3;
+  text-align: center;
+    }
+    sub{
+      font-size: small;
+      color: azure;
+    }
+    h3{
+      font-size: 1.5rem;
+    }
+  }

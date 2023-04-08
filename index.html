@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+    <title>GoodLuck</title>
+</head>
+
+<body>
+    <h1 id="head1"> TOSS UP! <sub>Dice Game</sub></h1>
+
+    <h3 >Select Number Of  Players:</h3>
+    <button class="btn" onclick="show1()">1 player</button>
+    <button class="btn" onclick="show2()">2 player</button>
+    <button class="btn" onclick="show3()">3 player</button>   
+    <button id="playbtn" onclick="roll1()">PLAY</button> 
+     <button id="playbtn1" onclick="roll2()">PLAY</button> 
+    <button id="playbtn2" onclick="roll1()">PLAY</button> 
+    <button id="resetbtn" onclick="refreshPage()">RESET</button>
+    
+       
+    <div class="row">
+       
+        <!-- <div class="img-with-text">
+            <img src="yourimage.jpg" alt="sometext" />
+            <p>Some text</p>
+        </div> -->
+        <div class=" column" id="im1" >
+            <p class="para" id="pl1">you</p>
+            <img class="img1" src="images/dice6.png" alt="dice" width="40%">
+        </div> 
+        <div class="column" id="im2">
+            <p class="para" id="pl2">computer</p>
+            <img class="img2" src="images/dice6.png" alt="dice" width="40%">
+        </div>
+        <div class="column" id="im3">
+            <p class="para">player 3</p>
+            <img class="img3" src="images/dice6.png" alt="dice" width="40%">
+        </div>
+   <br>
+   
+    </div>
+
+    <script src="index.js"></script>
+</body>
+<footer>
+    By ajit kumar
+  </footer>
+</html>
